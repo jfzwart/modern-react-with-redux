@@ -4,7 +4,7 @@ import LanguageContext from '../contexts/LanguageContext';
 class Field extends React.Component {
   // static contextType = LanguageContext;
   renderSubmit(value) {
-    return value === 'english' ? 'Name' : 'Naam'
+    return value.language === 'english' ? 'Name' : 'Naam'
   }
 
   render() {
